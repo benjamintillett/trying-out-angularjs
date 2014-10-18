@@ -1,0 +1,13 @@
+<html ng-app='myApp'>
+	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular.min.js"></script>
+	<script src="StartUpController.js"></script>
+
+	<form ng-submit="requestFunding()" ng-controller="StartUpController">
+		Starting: <input ng-change="computeNeeded()" ng-model="funding.startingEstimate">
+		Recomendation: {{ funding.needed }}
+		<button>Fun my startup!</button>
+		<button ng-click="reset()">Reset</button>
+	</form>
+
+	
+</html>
