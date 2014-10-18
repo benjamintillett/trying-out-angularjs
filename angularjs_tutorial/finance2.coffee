@@ -12,3 +12,5 @@ angular.module "finance2", []
 	    		amount * @usdToForeignRates[outCurr] / @usdToForeignRates[inCurr]
 
 
+
+
