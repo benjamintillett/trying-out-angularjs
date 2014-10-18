@@ -1,6 +1,6 @@
 angular.module 'invoice1',[]
   .controller 'InvoiceController', class
-      constructor: (@$location) ->
+      constructor: (@$scope) ->
         @qty = 1
         @cost = 2
         @inCurr = "EUR"
